@@ -81,8 +81,4 @@ with an exclamation mark at the end, e.g., "Alice!".*/
 var names:string[]=["alice","bob","charlie","david","emily"];
 var excl=names.forEach((exMarks)=>{
     console.log(`${exMarks}!`)
-    
 })
-
-
- 

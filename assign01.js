@@ -43,14 +43,6 @@ let doubledNumb = array
     .filter(even => even % 2 != 0)
     .map(odd => odd + odd);
 console.log("Assignment # 6:", doubledNumb);
-let nu = array.filter((cd) => {
-    if (cd % 2 == 0) { }
-    else {
-        cd + cd;
-        return cd;
-    }
-});
-console.log(nu);
 //7
 /*Given an array of names ["Alice", "Bob", "Charlie", "David", "Emily"], use the forEach method to log each name
 with an exclamation mark at the end, e.g., "Alice!".*/
