@@ -38,11 +38,9 @@ console.log("Assignment # 2:",resultantArray)
  /*Given an array of numbers [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], use the map and filter methods together to create a new array containing the 
  squares of even numbers.*/
 var num:number[]=[1,2,3,4,5,6,7,8,9,10];
-let squareOfEvenNumbers=num.filter((even)=>{
-    if(even%2==0){
-        return even**2;
-    }
-})
+let squareOfEvenNumbers=num
+.filter(odd=>odd%2==0)
+.map(even=>even**2)
 console.log("Assignment # 4:",squareOfEvenNumbers);
 
 
@@ -52,12 +50,39 @@ console.log("Assignment # 4:",squareOfEvenNumbers);
 each temperature is converted to Fahrenheit using the formula (Celsius * 9/5) + 32.*/
 var celTemp:number[]=[0,10,20,30,40];
 var fahTemp=celTemp.map((fahrenhiet)=>{
-    return fahrenhiet*(9/5)+32; `${fahTemp}F`
+    return `${fahrenhiet*(9/5)+32}F`
 })
 console.log("Assignment no 5:",fahTemp)
 
 
 
+
+
+
+
+
+/*Given an array of numbers [3, 6, 9, 12, 15, 18], use the map and filter methods together to create a new array
+ containing the doubled values of odd numbers.*/
+ var array:number[]=[3,6,9,12,15,18];
+ let doubledNumb=array
+ .filter(even=>even%2!=0)
+ .map(odd=>odd+odd)
+ console.log("Assignment # 6:",doubledNumb);
+
+
+
+ 
+
+ //7
+
+
+/*Given an array of names ["Alice", "Bob", "Charlie", "David", "Emily"], use the forEach method to log each name 
+with an exclamation mark at the end, e.g., "Alice!".*/
+var names:string[]=["alice","bob","charlie","david","emily"];
+var excl=names.forEach((exMarks)=>{
+    console.log(`${exMarks}!`)
+    
+})
 
 
  
